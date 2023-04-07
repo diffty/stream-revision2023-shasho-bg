@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+}
+
+#checker {
+    background-image: url('./test.svg');
+    background-repeat: repeat;
+    background-position: 10px;
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    left: -50%;
+    top: -50%;
+    margin: 0px;
+    transform: rotate(20deg);
+    animation-duration: 1s;
+    animation-name: bg-scrolling;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#wrap {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+@keyframes bg-scrolling {
+    from {
+        background-position-x: 0px;
+    }
+
+    to {
+        background-position-x: 100px;
+    }
+}
